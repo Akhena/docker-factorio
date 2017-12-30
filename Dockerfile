@@ -1,6 +1,6 @@
 FROM frolvlad/alpine-glibc:alpine-3.6
 
-MAINTAINER https://github.com/dtandersen/docker_factorio_server
+MAINTAINER https://github.com/Akhena/docker-factorio
 
 ARG USER=factorio
 ARG GROUP=factorio
