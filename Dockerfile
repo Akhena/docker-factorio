@@ -32,9 +32,9 @@ RUN mkdir -p /opt && \
 
 EXPOSE $PORT/udp $RCON_PORT/tcp
 
-USER $USER
-
 COPY ./docker-entrypoint.sh /
-RUN chmod +x ./docker-entrypoint.sh
+RUN chmod +x /docker-entrypoint.sh
+
+USER $USER
 
 ENTRYPOINT ["/docker-entrypoint.sh"]
